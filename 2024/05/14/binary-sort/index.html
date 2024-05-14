@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Busca Binária | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A busca binária é um algoritmo eficiente para encontrar um elemento em um array ordenado. Ele compara o elemento alvo com o elemento do meio do array e, dependendo da comparação, continua a busca na m">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Busca Binária">
+<meta property="og:url" content="https://thiagopradouni.github.io/precalculohexo/2024/05/14/binary-sort/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="A busca binária é um algoritmo eficiente para encontrar um elemento em um array ordenado. Ele compara o elemento alvo com o elemento do meio do array e, dependendo da comparação, continua a busca na m">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-05-14T22:49:18.000Z">
+<meta property="article:modified_time" content="2024-05-14T22:49:44.980Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Busca Binária">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/precalculohexo/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/precalculohexo/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/precalculohexo/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/precalculohexo/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/precalculohexo/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/precalculohexo/">Home</a>
+        
+          <a class="main-nav-link" href="/precalculohexo/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/precalculohexo/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://thiagopradouni.github.io/precalculohexo"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-binary-sort" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/precalculohexo/2024/05/14/binary-sort/" class="article-date">
+  <time class="dt-published" datetime="2024-05-14T22:49:18.000Z" itemprop="datePublished">2024-05-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Busca Binária
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>A busca binária é um algoritmo eficiente para encontrar um elemento em um array ordenado. Ele compara o elemento alvo com o elemento do meio do array e, dependendo da comparação, continua a busca na metade esquerda ou direita do array, reduzindo o intervalo de busca pela metade a cada iteração.</p>
+<h3 id="Passos-do-algoritmo"><a href="#Passos-do-algoritmo" class="headerlink" title="Passos do algoritmo:"></a>Passos do algoritmo:</h3><ol>
+<li><strong>Inicialização dos limites:</strong> Inicializa os limites do intervalo de busca.</li>
+<li><strong>Iteração:</strong> Enquanto o intervalo de busca não estiver vazio, calcula o elemento do meio, compara-o com o elemento alvo e ajusta os limites do intervalo de busca.</li>
+<li><strong>Verificação de elemento encontrado:</strong> Retorna o índice do elemento se encontrado, caso contrário, indica que o elemento não está presente no array.</li>
+</ol>
+<h3 id="Implementacao-em-Python"><a href="#Implementacao-em-Python" class="headerlink" title="Implementação em Python:"></a>Implementação em Python:</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">busca_binaria</span>(<span class="params">arr, alvo</span>):</span><br><span class="line">    esquerda, direita = <span class="number">0</span>, <span class="built_in">len</span>(arr) - <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> esquerda &lt;= direita:</span><br><span class="line">        meio = (esquerda + direita) // <span class="number">2</span></span><br><span class="line">        <span class="comment"># Verifica se o alvo está no meio do array</span></span><br><span class="line">        <span class="keyword">if</span> arr[meio] == alvo:</span><br><span class="line">            <span class="keyword">return</span> meio</span><br><span class="line">        <span class="comment"># Se o alvo for menor que o elemento do meio, busca na metade esquerda do array</span></span><br><span class="line">        <span class="keyword">elif</span> arr[meio] &gt; alvo:</span><br><span class="line">            direita = meio - <span class="number">1</span></span><br><span class="line">        <span class="comment"># Se o alvo for maior que o elemento do meio, busca na metade direita do array</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            esquerda = meio + <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Retorna -1 se o elemento não for encontrado</span></span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Exemplo de uso</span></span><br><span class="line">arr = [<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">10</span>, <span class="number">40</span>]</span><br><span class="line">alvo = <span class="number">10</span></span><br><span class="line">resultado = busca_binaria(arr, alvo)</span><br><span class="line"><span class="keyword">if</span> resultado != -<span class="number">1</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Elemento encontrado no índice:&quot;</span>, resultado)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Elemento não encontrado no array.&quot;</span>)</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://thiagopradouni.github.io/precalculohexo/2024/05/14/binary-sort/" data-id="clw6zju450000cow29783fisz" data-title="Busca Binária" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/precalculohexo/tags/Busca-Binaria/" rel="tag">Busca Binária</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/precalculohexo/2024/05/14/merge-sort/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Merge Sort</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/precalculohexo/tags/Bubble-Sort/" rel="tag">Bubble Sort</a></li><li class="tag-list-item"><a class="tag-list-link" href="/precalculohexo/tags/Busca-Binaria/" rel="tag">Busca Binária</a></li><li class="tag-list-item"><a class="tag-list-link" href="/precalculohexo/tags/Insertion-Sort/" rel="tag">Insertion Sort</a></li><li class="tag-list-item"><a class="tag-list-link" href="/precalculohexo/tags/Merge-Sort/" rel="tag">Merge Sort</a></li><li class="tag-list-item"><a class="tag-list-link" href="/precalculohexo/tags/Selection-Sort/" rel="tag">Selection Sort</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/precalculohexo/tags/Bubble-Sort/" style="font-size: 10px;">Bubble Sort</a> <a href="/precalculohexo/tags/Busca-Binaria/" style="font-size: 10px;">Busca Binária</a> <a href="/precalculohexo/tags/Insertion-Sort/" style="font-size: 10px;">Insertion Sort</a> <a href="/precalculohexo/tags/Merge-Sort/" style="font-size: 10px;">Merge Sort</a> <a href="/precalculohexo/tags/Selection-Sort/" style="font-size: 10px;">Selection Sort</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/precalculohexo/archives/2024/05/">May 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/precalculohexo/2024/05/14/binary-sort/">Busca Binária</a>
+          </li>
+        
+          <li>
+            <a href="/precalculohexo/2024/05/14/merge-sort/">Merge Sort</a>
+          </li>
+        
+          <li>
+            <a href="/precalculohexo/2024/05/14/insertion-sort/">Insertion Sort</a>
+          </li>
+        
+          <li>
+            <a href="/precalculohexo/2024/05/14/selection-sort/">Selection Sort</a>
+          </li>
+        
+          <li>
+            <a href="/precalculohexo/2024/05/14/bubble-sort/">Bubble Sort</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/precalculohexo/" class="mobile-nav-link">Home</a>
+  
+    <a href="/precalculohexo/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/precalculohexo/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/precalculohexo/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/precalculohexo/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
