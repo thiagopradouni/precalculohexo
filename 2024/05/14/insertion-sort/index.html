@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>insertion-sort | Hexo</title>
+  <title>Insertion Sort | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="O Insertion Sort é um algoritmo de ordenação simples que percorre o array e insere cada elemento na posição correta em relação aos elementos já ordenados, expandindo assim a porção ordenada do array.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="insertion-sort">
+<meta property="og:title" content="Insertion Sort">
 <meta property="og:url" content="https://thiagopradouni.github.io/precalculohexo/2024/05/14/insertion-sort/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="O Insertion Sort é um algoritmo de ordenação simples que percorre o array e insere cada elemento na posição correta em relação aos elementos já ordenados, expandindo assim a porção ordenada do array.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-05-14T22:42:02.000Z">
-<meta property="article:modified_time" content="2024-05-14T22:44:39.231Z">
+<meta property="article:modified_time" content="2024-05-14T22:45:53.413Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Insertion Sort">
 <meta name="twitter:card" content="summary">
@@ -86,7 +86,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      insertion-sort
+      Insertion Sort
     </h1>
   
 
@@ -99,29 +99,11 @@
 <li><strong>Iteração pelo array:</strong> Percorre todo o array.</li>
 <li><strong>Comparação e inserção:</strong> Para cada elemento, compara-o com os elementos à sua esquerda na porção ordenada do array e o insere na posição correta.</li>
 </ol>
-<h3 id="Implementacao-em-Python"><a href="#Implementacao-em-Python" class="headerlink" title="Implementação em Python:"></a>Implementação em Python:</h3><pre><code class="python">def insertion_sort(arr):
-    # Percorre todo o array
-    for i in range(1, len(arr)):
-        chave = arr[i]
-        # Move os elementos do array que são maiores que a chave para uma posição à frente de sua posição atual
-        j = i - 1
-        while j &gt;= 0 and chave &lt; arr[j]:
-            arr[j + 1] = arr[j]
-            j -= 1
-        arr[j + 1] = chave
-    
-    return arr
-
-# Exemplo de uso
-arr = [64, 25, 12, 22, 11]
-print(&quot;Array original:&quot;, arr)
-print(&quot;Array ordenado:&quot;, insertion_sort(arr))
-</code></pre>
-
+<h3 id="Implementacao-em-Python"><a href="#Implementacao-em-Python" class="headerlink" title="Implementação em Python:"></a>Implementação em Python:</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">insertion_sort</span>(<span class="params">arr</span>):</span><br><span class="line">    <span class="comment"># Percorre todo o array</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="built_in">len</span>(arr)):</span><br><span class="line">        chave = arr[i]</span><br><span class="line">        <span class="comment"># Move os elementos do array que são maiores que a chave para uma posição à frente de sua posição atual</span></span><br><span class="line">        j = i - <span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span> j &gt;= <span class="number">0</span> <span class="keyword">and</span> chave &lt; arr[j]:</span><br><span class="line">            arr[j + <span class="number">1</span>] = arr[j]</span><br><span class="line">            j -= <span class="number">1</span></span><br><span class="line">        arr[j + <span class="number">1</span>] = chave</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> arr</span><br><span class="line"></span><br><span class="line"><span class="comment"># Exemplo de uso</span></span><br><span class="line">arr = [<span class="number">64</span>, <span class="number">25</span>, <span class="number">12</span>, <span class="number">22</span>, <span class="number">11</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Array original:&quot;</span>, arr)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Array ordenado:&quot;</span>, insertion_sort(arr))</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://thiagopradouni.github.io/precalculohexo/2024/05/14/insertion-sort/" data-id="clw6zdawt0000z4w2ee0jc4lg" data-title="insertion-sort" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://thiagopradouni.github.io/precalculohexo/2024/05/14/insertion-sort/" data-id="clw6zdawt0000z4w2ee0jc4lg" data-title="Insertion Sort" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -188,7 +170,7 @@ print(&quot;Array ordenado:&quot;, insertion_sort(arr))
       <ul>
         
           <li>
-            <a href="/precalculohexo/2024/05/14/insertion-sort/">insertion-sort</a>
+            <a href="/precalculohexo/2024/05/14/insertion-sort/">Insertion Sort</a>
           </li>
         
           <li>
