@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   
   
-  <title>Portfólio Pré-Cálculo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Hexo">
-  <meta property="og:url" content="https://thiagopradouni.github.io/precalculohexo/index.html">
-  <meta property="og:site_name" content="Hexo">
-  <meta property="og:locale" content="en_US">
-  <meta property="article:author" content="John Doe">
-  <meta name="twitter:card" content="summary">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://thiagopradouni.github.io/precalculohexo/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/precalculohexo/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -39,7 +39,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/precalculohexo/" id="logo">Portfólio Pré-Cálculo</a>
+        <a href="/precalculohexo/" id="logo">Hexo</a>
       </h1>
       
     </div>
@@ -49,7 +49,7 @@
         
           <a class="main-nav-link" href="/precalculohexo/">Home</a>
         
-          <a class="main-nav-link" href="/precalculohexo/archives">Arquivos</a>
+          <a class="main-nav-link" href="/precalculohexo/archives">Archives</a>
         
       </nav>
       <nav id="sub-nav">
@@ -274,7 +274,7 @@
 <li><strong>Comparação de elementos adjacentes:</strong> Compara elementos adjacentes e os troca se estiverem na ordem errada.</li>
 <li><strong>Repetição:</strong> Repete os passos acima até que nenhum elemento precise ser trocado, indicando que o array está ordenado.</li>
 </ol>
-<h3 id="Implementacao-em-Python"><a href="#Implementacao-em-Python" class="headerlink" title="Implementação em Python:"></a>Implementação em Python:</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">bubble_sort</span>(<span class="params">arr</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(arr)</span><br><span class="line">    <span class="comment"># Percorre todo o array</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="comment"># Últimos i elementos já estão ordenados, então não precisamos compará-los</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, n-i-<span class="number">1</span>):</span><br><span class="line">            <span class="comment"># Compara elementos adjacentes e os troca se estiverem na ordem errada</span></span><br><span class="line">            <span class="keyword">if</span> arr[j] &gt; arr[j+<span class="number">1</span>]:</span><br><span class="line">                arr[j], arr[j+<span class="number">1</span>] = arr[j+<span class="number">1</span>], arr[j]</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> arr</span><br><span class="line"></span><br><span class="line"><span class="comment"># Exemplo de uso</span></span><br><span class="line">arr = [<span class="number">64</span>, <span class="number">25</span>, <span class="number">12</span>, <span class="number">22</span>, <span class="number">11</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Array original:&quot;</span>, arr)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Array ordenado:&quot;</span>, bubble_sort(arr))</span><br></pre></td></tr></table></figure>
+<h3 id="Implementacao-em-Python"><a href="#Implementacao-em-Python" class="headerlink" title="Implementação em Python:"></a>Implementação em Python:</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="comment"># método bubble sort</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">bubble_sort</span>(<span class="params">arr</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(arr)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, n-i-<span class="number">1</span>):</span><br><span class="line">            <span class="keyword">if</span> arr[j] &gt; arr[j+<span class="number">1</span>]:</span><br><span class="line">                arr[j], arr[j+<span class="number">1</span>] = arr[j+<span class="number">1</span>], arr[j]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> arr</span><br><span class="line"></span><br><span class="line"><span class="comment"># cria um array com 300 números inteiros aleatórios entre 1 e 500</span></span><br><span class="line">arr = [random.randint(<span class="number">1</span>, <span class="number">500</span>) <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10000</span>)]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Array original:&quot;</span>, arr)</span><br><span class="line"></span><br><span class="line"><span class="comment"># medição do tempo de execução</span></span><br><span class="line">start_time = time.time()</span><br><span class="line">sorted_arr = bubble_sort(arr)</span><br><span class="line">end_time = time.time()</span><br><span class="line">execution_time = end_time - start_time</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Array ordenado:&quot;</span>, sorted_arr)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Tempo de execução:&quot;</span>, execution_time, <span class="string">&quot;segundos&quot;</span>)</span><br></pre></td></tr></table></figure>
 
       
     </div>
