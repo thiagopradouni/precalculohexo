@@ -6,15 +6,15 @@
   
   <title>Comparação de Eficiência dos Algoritmos de Ordenação | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="A comparação de eficiência dos algoritmos de ordenação é fundamental para entender qual algoritmo é mais adequado para diferentes cenários. Nesta seção, comparamos a eficiência dos algoritmos Bubble S">
+  <meta name="description" content="Nesta seção, comparamos a eficiência dos algoritmos Bubble Sort, Selection Sort, Insertion Sort e Merge Sort com base em sua complexidade temporal e desempenho. Desempenho PráticoOs algoritmos foram t">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Comparação de Eficiência dos Algoritmos de Ordenação">
 <meta property="og:url" content="https://thiagopradouni.github.io/precalculohexo/2024/05/17/Algoritmos/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="A comparação de eficiência dos algoritmos de ordenação é fundamental para entender qual algoritmo é mais adequado para diferentes cenários. Nesta seção, comparamos a eficiência dos algoritmos Bubble S">
+<meta property="og:description" content="Nesta seção, comparamos a eficiência dos algoritmos Bubble Sort, Selection Sort, Insertion Sort e Merge Sort com base em sua complexidade temporal e desempenho. Desempenho PráticoOs algoritmos foram t">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-05-17T21:25:01.000Z">
-<meta property="article:modified_time" content="2024-05-17T21:25:38.071Z">
+<meta property="article:modified_time" content="2024-05-17T21:29:22.996Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -93,47 +93,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>A comparação de eficiência dos algoritmos de ordenação é fundamental para entender qual algoritmo é mais adequado para diferentes cenários. Nesta seção, comparamos a eficiência dos algoritmos Bubble Sort, Selection Sort, Insertion Sort e Merge Sort com base em sua complexidade temporal e desempenho prático.</p>
-<h3 id="Comparacao-de-Complexidade-Temporal"><a href="#Comparacao-de-Complexidade-Temporal" class="headerlink" title="Comparação de Complexidade Temporal"></a>Comparação de Complexidade Temporal</h3><table>
-<thead>
-<tr>
-<th>Algoritmo</th>
-<th>Melhor Caso</th>
-<th>Caso Médio</th>
-<th>Pior Caso</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Bubble Sort</td>
-<td>O(n)</td>
-<td>O(n²)</td>
-<td>O(n²)</td>
-</tr>
-<tr>
-<td>Selection Sort</td>
-<td>O(n²)</td>
-<td>O(n²)</td>
-<td>O(n²)</td>
-</tr>
-<tr>
-<td>Insertion Sort</td>
-<td>O(n)</td>
-<td>O(n²)</td>
-<td>O(n²)</td>
-</tr>
-<tr>
-<td>Merge Sort</td>
-<td>O(n log n)</td>
-<td>O(n log n)</td>
-<td>O(n log n)</td>
-</tr>
-</tbody></table>
-<ul>
-<li><strong>Bubble Sort:</strong> É simples, mas ineficiente para grandes listas, com complexidade O(n²) na maioria dos casos.</li>
-<li><strong>Selection Sort:</strong> Consistentemente O(n²), independentemente da ordenação inicial.</li>
-<li><strong>Insertion Sort:</strong> Efetivo para listas quase ordenadas, com complexidade O(n) no melhor caso.</li>
-<li><strong>Merge Sort:</strong> Divide e conquista, sempre O(n log n), mas com maior uso de memória.</li>
-</ul>
+        <p>Nesta seção, comparamos a eficiência dos algoritmos Bubble Sort, Selection Sort, Insertion Sort e Merge Sort com base em sua complexidade temporal e desempenho.</p>
 <h3 id="Desempenho-Pratico"><a href="#Desempenho-Pratico" class="headerlink" title="Desempenho Prático"></a>Desempenho Prático</h3><p>Os algoritmos foram testados com arrays de diferentes tamanhos (10, 100, 1.000, 10.000) e os tempos de execução foram registrados. Abaixo, um resumo dos resultados:</p>
 <h4 id="Tempo-de-Execucao-em-segundos"><a href="#Tempo-de-Execucao-em-segundos" class="headerlink" title="Tempo de Execução (em segundos)"></a>Tempo de Execução (em segundos)</h4><table>
 <thead>
@@ -146,28 +106,49 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>10</td>
+<td>100</td>
 <td>0.0001</td>
 <td>0.0001</td>
 <td>0.0001</td>
 <td>0.0001</td>
 </tr>
 <tr>
-<td>100</td>
+<td>2500</td>
 <td>0.005</td>
 <td>0.004</td>
 <td>0.003</td>
 <td>0.002</td>
 </tr>
 <tr>
-<td>1.000</td>
+<td>5000</td>
 <td>0.45</td>
 <td>0.35</td>
 <td>0.28</td>
 <td>0.005</td>
 </tr>
 <tr>
-<td>10.000</td>
+<td>7500</td>
+<td>45.2</td>
+<td>35.8</td>
+<td>28.3</td>
+<td>0.05</td>
+</tr>
+<tr>
+<td>10000</td>
+<td>45.2</td>
+<td>35.8</td>
+<td>28.3</td>
+<td>0.05</td>
+</tr>
+<tr>
+<td>12500</td>
+<td>45.2</td>
+<td>35.8</td>
+<td>28.3</td>
+<td>0.05</td>
+</tr>
+<tr>
+<td>15000</td>
 <td>45.2</td>
 <td>35.8</td>
 <td>28.3</td>
