@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Comparação de Eficiência dos Algoritmos de Ordenação | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A comparação de eficiência dos algoritmos de ordenação é fundamental para entender qual algoritmo é mais adequado para diferentes cenários. Nesta seção, comparamos a eficiência dos algoritmos Bubble S">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Comparação de Eficiência dos Algoritmos de Ordenação">
+<meta property="og:url" content="https://thiagopradouni.github.io/precalculohexo/2024/05/17/Algoritmos/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="A comparação de eficiência dos algoritmos de ordenação é fundamental para entender qual algoritmo é mais adequado para diferentes cenários. Nesta seção, comparamos a eficiência dos algoritmos Bubble S">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-05-17T21:25:01.000Z">
+<meta property="article:modified_time" content="2024-05-17T21:25:38.071Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/precalculohexo/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/precalculohexo/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/precalculohexo/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/precalculohexo/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/precalculohexo/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/precalculohexo/">Home</a>
+        
+          <a class="main-nav-link" href="/precalculohexo/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/precalculohexo/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://thiagopradouni.github.io/precalculohexo"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Algoritmos" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/precalculohexo/2024/05/17/Algoritmos/" class="article-date">
+  <time class="dt-published" datetime="2024-05-17T21:25:01.000Z" itemprop="datePublished">2024-05-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Comparação de Eficiência dos Algoritmos de Ordenação
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>A comparação de eficiência dos algoritmos de ordenação é fundamental para entender qual algoritmo é mais adequado para diferentes cenários. Nesta seção, comparamos a eficiência dos algoritmos Bubble Sort, Selection Sort, Insertion Sort e Merge Sort com base em sua complexidade temporal e desempenho prático.</p>
+<h3 id="Comparacao-de-Complexidade-Temporal"><a href="#Comparacao-de-Complexidade-Temporal" class="headerlink" title="Comparação de Complexidade Temporal"></a>Comparação de Complexidade Temporal</h3><table>
+<thead>
+<tr>
+<th>Algoritmo</th>
+<th>Melhor Caso</th>
+<th>Caso Médio</th>
+<th>Pior Caso</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bubble Sort</td>
+<td>O(n)</td>
+<td>O(n²)</td>
+<td>O(n²)</td>
+</tr>
+<tr>
+<td>Selection Sort</td>
+<td>O(n²)</td>
+<td>O(n²)</td>
+<td>O(n²)</td>
+</tr>
+<tr>
+<td>Insertion Sort</td>
+<td>O(n)</td>
+<td>O(n²)</td>
+<td>O(n²)</td>
+</tr>
+<tr>
+<td>Merge Sort</td>
+<td>O(n log n)</td>
+<td>O(n log n)</td>
+<td>O(n log n)</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>Bubble Sort:</strong> É simples, mas ineficiente para grandes listas, com complexidade O(n²) na maioria dos casos.</li>
+<li><strong>Selection Sort:</strong> Consistentemente O(n²), independentemente da ordenação inicial.</li>
+<li><strong>Insertion Sort:</strong> Efetivo para listas quase ordenadas, com complexidade O(n) no melhor caso.</li>
+<li><strong>Merge Sort:</strong> Divide e conquista, sempre O(n log n), mas com maior uso de memória.</li>
+</ul>
+<h3 id="Desempenho-Pratico"><a href="#Desempenho-Pratico" class="headerlink" title="Desempenho Prático"></a>Desempenho Prático</h3><p>Os algoritmos foram testados com arrays de diferentes tamanhos (10, 100, 1.000, 10.000) e os tempos de execução foram registrados. Abaixo, um resumo dos resultados:</p>
+<h4 id="Tempo-de-Execucao-em-segundos"><a href="#Tempo-de-Execucao-em-segundos" class="headerlink" title="Tempo de Execução (em segundos)"></a>Tempo de Execução (em segundos)</h4><table>
+<thead>
+<tr>
+<th>Tamanho do Array</th>
+<th>Bubble Sort</th>
+<th>Selection Sort</th>
+<th>Insertion Sort</th>
+<th>Merge Sort</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>10</td>
+<td>0.0001</td>
+<td>0.0001</td>
+<td>0.0001</td>
+<td>0.0001</td>
+</tr>
+<tr>
+<td>100</td>
+<td>0.005</td>
+<td>0.004</td>
+<td>0.003</td>
+<td>0.002</td>
+</tr>
+<tr>
+<td>1.000</td>
+<td>0.45</td>
+<td>0.35</td>
+<td>0.28</td>
+<td>0.005</td>
+</tr>
+<tr>
+<td>10.000</td>
+<td>45.2</td>
+<td>35.8</td>
+<td>28.3</td>
+<td>0.05</td>
+</tr>
+</tbody></table>
+<h3 id="Analise-de-Eficiencia"><a href="#Analise-de-Eficiencia" class="headerlink" title="Análise de Eficiência"></a>Análise de Eficiência</h3><ul>
+<li><strong>Bubble Sort:</strong> Seu tempo de execução cresce rapidamente com o aumento do tamanho do array, tornando-o impraticável para grandes listas.</li>
+<li><strong>Selection Sort:</strong> Embora melhor que Bubble Sort, ainda é ineficiente para listas grandes devido à sua complexidade O(n²).</li>
+<li><strong>Insertion Sort:</strong> Melhor desempenho em listas parcialmente ordenadas, mas ainda ineficiente para listas grandes desordenadas.</li>
+<li><strong>Merge Sort:</strong> Consistentemente eficiente com complexidade O(n log n), ideal para grandes conjuntos de dados, mas consome mais memória.</li>
+</ul>
+<h3 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h3><p>Para pequenas listas ou listas quase ordenadas, Insertion Sort pode ser eficiente. Para listas desordenadas ou grandes, Merge Sort é a escolha ideal devido à sua eficiência consistente. Bubble Sort e Selection Sort são mais adequados para fins educacionais ou listas muito pequenas, devido à sua ineficiência em listas maiores.</p>
+<p>Para mais detalhes sobre os testes e resultados, consulte a <a target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/11P-2BTCk75xfnqsLG7m1Qd_rJHF0NPWW-j8PXxsD4E8/edit#gid=1949946565">Planilha de desempenho</a>.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://thiagopradouni.github.io/precalculohexo/2024/05/17/Algoritmos/" data-id="clwb6v770000088w2804mcsza" data-title="Comparação de Eficiência dos Algoritmos de Ordenação" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/precalculohexo/2024/05/14/binary-sort/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Busca Binária</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/precalculohexo/archives/2024/05/">May 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/precalculohexo/2024/05/17/Algoritmos/">Comparação de Eficiência dos Algoritmos de Ordenação</a>
+          </li>
+        
+          <li>
+            <a href="/precalculohexo/2024/05/14/binary-sort/">Busca Binária</a>
+          </li>
+        
+          <li>
+            <a href="/precalculohexo/2024/05/14/merge-sort/">Merge Sort</a>
+          </li>
+        
+          <li>
+            <a href="/precalculohexo/2024/05/14/insertion-sort/">Insertion Sort</a>
+          </li>
+        
+          <li>
+            <a href="/precalculohexo/2024/05/14/selection-sort/">Selection Sort</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/precalculohexo/" class="mobile-nav-link">Home</a>
+  
+    <a href="/precalculohexo/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/precalculohexo/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/precalculohexo/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/precalculohexo/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
